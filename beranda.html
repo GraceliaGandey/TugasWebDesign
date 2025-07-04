@@ -1434,6 +1434,12 @@
 
         document.addEventListener('DOMContentLoaded', updateDocumentCompleteness);
 
+        // Add logout functionality
+        document.querySelector('.logout-link').addEventListener('click', function(e) {
+            e.preventDefault();
+            window.location.href = 'login.html';
+        });
+
         const scheduleData = {
             1: [
                 { code: 'IF1112', name: 'Aljabar Linear Fundamental', teacher: 'Sahulata, Reynoldus Andrias', credit: 3, day: 'Selasa, Kamis', time: '07.10-08.40', room: 'GK1-303' },
