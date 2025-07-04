@@ -8,11 +8,32 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f4f7f6;
-            color: #333;
+            background: url('asset/images/Background.png') no-repeat center center fixed;
+            background-size: cover;
+            font-family: 'Poopins', sans-serif;
+            margin: 0;
+        }
+        .logo-unklab {
+           height: 60px;
+           margin-right: 15px;
+        }
+        .title-unklab {
+            display: flex;
+            flex-direction: column;
+            color: white;
+            line-height: 1.2;
         }
 
+        .main-title {
+         font-size: 1.25rem;
+         font-weight: 600;
+        }
+
+         .sub-title {
+          font-size: 0.9rem;
+          font-weight: 300;
+          color: #ffc107;
+        }
         .navbar {
             background-color: #002293d1; /* Dark blue for navbar */
             padding: 1rem 1.5rem;
@@ -715,10 +736,17 @@
 <body>
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">UNKLAB</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+            <div class="d-flex align-items-center me-3">
+                <img src="asset/images/LOGO_UNIVERSITAS_KLABAT.png" alt="Logo UNKLAB" class="logo-unklab">
+                <div class="title-unklab">
+                <div class="main-title">SISTEM INFORMASI UNKLAB</div>
+                <div class="sub-title">Pathway to Excellence</div>
+                </div>
+            </div>
+
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
